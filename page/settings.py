@@ -74,14 +74,22 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ["PGDATABASE"],
-        'USER': os.environ["PGUSER"],
-        'PASSWORD': os.environ["PGPASSWORD"],
-        'HOST': os.environ["PGHOST"],
-        'PORT': os.environ["PGPORT"],
-    }
+   # 'default': {
+   #    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+   #    'NAME': os.environ["PGDATABASE"],
+   #    'USER': os.environ["PGUSER"],
+   #    'PASSWORD': os.environ["PGPASSWORD"],
+   #    'HOST': os.environ["PGHOST"],
+   #    'PORT': os.environ["PGPORT"],
+   # }
+   'default': {
+      'ENGINE': 'django.db.backends.postgresql_psycopg2',
+      'NAME': 'sis_facu',
+      'USER': 'xavi',
+      'PASSWORD': 'Df5trVEwOzNRGk5LyQJbZ0uR2IdxBxSv',
+      'HOST': 'dpg-cdkrrb5a49999pskk33g-a.oregon-postgres.render.com',
+      'PORT': '5432',
+   }
 }
 
 
